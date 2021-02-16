@@ -24,12 +24,18 @@
     <ClCompile Include="HW2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HW3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HW1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="HW2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HW3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
