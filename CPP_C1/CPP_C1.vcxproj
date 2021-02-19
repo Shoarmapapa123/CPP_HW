@@ -145,8 +145,10 @@
     <ClCompile Include="CPP_C1.cpp" />
     <ClCompile Include="HW1.cpp" />
     <ClCompile Include="HW2.cpp" />
+    <ClCompile Include="HW3.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HW3.h" />
     <ClInclude Include="HW1.h" />
     <ClInclude Include="HW2.h" />
   </ItemGroup>

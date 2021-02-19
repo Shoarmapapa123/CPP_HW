@@ -2,6 +2,7 @@
 #include <fstream>
 #include "HW1.h"
 #include "HW2.h"
+#include "HW3.h"
 
 struct PlayerState {
 	char name[20];
