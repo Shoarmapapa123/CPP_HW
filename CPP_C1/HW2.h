@@ -7,7 +7,9 @@
 #include <stdio.h>
 #include <windows.h>
 
-extern "C" __declspec(dllexport) void fractionSimplifier(int a, int b);
-extern "C" __declspec(dllexport) void printNames();
-extern "C" __declspec(dllexport) bool isPalindrome(char s[]);
+void fractionSimplifier(int a, int b);
+void printNames();
+bool isPalindrome(char s[]);
+//struct PlayerState;
+void readTXT(char s[]);
 #endif

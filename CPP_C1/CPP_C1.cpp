@@ -2,22 +2,23 @@
 #include <fstream>
 #include "HW1.h"
 #include "HW2.h"
+
+struct PlayerState {
+	char name[20];
+	int level;
+	double health;
+	int experience;
+};
+//TODO HW2 => struct excercise
 int main()
 {    
-	oddEven(1);
-	oddEven(2);
-	int a = 2;
-	int b = 4;
-	fractionSimplifier(a, b);
-	//std::cout << a;
-	char l[10] = { "lepel" };
-	char l2[10] = { "Lepel" };
-	char z[10] = { "zeef" };
-	std::cout << isPalindrome(l);
-	std::cout << isPalindrome(z);
-	std::cout << isPalindrome(l2);
-	if (isPalindrome(l)) {
-		std::cout << "\nYEET\n";
-	}
-	//printNames();
+	std::cout<<GCD(2, 3);
+	char file[20] = "hw2.txt";
+	readTXT(file);
+	PlayerState s1{"Henk",2,20.0,4};
+	PlayerState s2{ "Alfrodo",2,20.0,4 };
+	PlayerState s3{ "Dodo",2,20.0,4 };
+	PlayerState states[3] = { s1,s2,s3 };
+
 }
+

@@ -1,8 +1,9 @@
 #include "HW2.h"
 #include "HW1.h"
-//TODO OPGAVEN 2,5,7-9
+#include <fstream>
+#include <iostream>
+#include <string>
 
-//TODO change to call by reference
 void fractionSimplifier(int a, int b) {
 	int gcd = GCD(a, b);
 	a /= gcd;
@@ -41,15 +42,27 @@ bool isPalindrome(char s[]) {
 	return true;
 }
 
-//TODO ADD IN HEADER
-void readTXT(){
+void readTXT(char s[]){
+	std::fstream inputFile;
+	inputFile.open(s);
+	std::string line;
+	if (inputFile.is_open())
+	{
+		while (std::getline(inputFile, line))
+		{
+			std::cout << line << '\n';
+		}
+		inputFile.close();
+	}
+
+	else std::cout << "Unable to open file";
 
 }
-
+/*
 //TODO ADD IN HEADER
 struct PlayerState {
 	char name[20];
 	int level;
 	double health;
 	int experience;
-};
+};*/

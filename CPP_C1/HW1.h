@@ -7,12 +7,12 @@
 #include <stdio.h>
 #include <windows.h>
 
-extern "C" __declspec(dllexport) int sum(int a, int b);
-extern "C" __declspec(dllexport) void oddEven(int i);
-extern "C" __declspec(dllexport) int power(int b, int e);
-extern "C" __declspec(dllexport) bool prime(int i);
-extern "C" __declspec(dllexport) int findValueInArray(int A[], int l, int v);
-extern "C" __declspec(dllexport) void bubbleSort(int A[], int l);
-extern "C" __declspec(dllexport) int GCD(int i, int j);
-extern "C" __declspec(dllexport) int LCM(int i, int j);
+int sum(int a, int b);
+void oddEven(int i);
+int power(int b, int e);
+bool prime(int i);
+int findValueInArray(int A[], int l, int v);
+void bubbleSort(int A[], int l);
+int GCD(int i, int j);
+int LCM(int i, int j);
 #endif

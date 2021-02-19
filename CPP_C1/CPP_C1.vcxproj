@@ -150,6 +150,9 @@
     <ClInclude Include="HW1.h" />
     <ClInclude Include="HW2.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="hw2.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
