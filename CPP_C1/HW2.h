@@ -10,6 +10,11 @@
 void fractionSimplifier(int a, int b);
 void printNames();
 bool isPalindrome(char s[]);
-//struct PlayerState;
 void readTXT(char s[]);
+struct PlayerState {
+	char name[20];
+	int level;
+	double health;
+	int experience;
+};
 #endif

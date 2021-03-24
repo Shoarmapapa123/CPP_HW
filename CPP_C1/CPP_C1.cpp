@@ -3,23 +3,27 @@
 #include "HW1.h"
 #include "HW2.h"
 #include "HW3.h"
+#include "MyClass.h"
+#include "MyStack.h"
 
-struct PlayerState {
-	char name[20];
-	int level;
-	double health;
-	int experience;
-};
 //TODO HW2 => struct excercise
 int main()
-{    
-	std::cout<<GCD(2, 3);
-	char file[20] = "hw2.txt";
-	readTXT(file);
-	PlayerState s1{"Henk",2,20.0,4};
-	PlayerState s2{ "Alfrodo",2,20.0,4 };
-	PlayerState s3{ "Dodo",2,20.0,4 };
-	PlayerState states[3] = { s1,s2,s3 };
-
+{
+	/*int** p = new int*;
+	int n = 5;
+	pascalTriangle(p, n);
+	printPascalTriangle(p, n);
+	deletePascalTriangle(p, n);*/
+	MyStack m;
+	m.print();
+	m.push(101);
+	m.print();
+	m.push(220);
+	m.print();
+	m.push(352);
+	m.print();
+	std::cout << "POPPING: " << m.pop() << std::endl;
+	m.print();
+	std::cout << "SUM: " << m.sum() << std::endl;
 }
 

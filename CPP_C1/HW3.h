@@ -6,7 +6,9 @@
 #include <iostream>
 #include <stdio.h>
 #include <windows.h>
-
-extern "C" __declspec(dllexport) void fillArray(int* p, int n);
-
+void eOne(int*& p, int*& q, int*& r);
+void fillArray(int*& p, int n);
+void pascalTriangle(int**& p, int n);
+void printPascalTriangle(int**& p, int n);
+void deletePascalTriangle(int**& p, int n);
 #endif

@@ -58,11 +58,3 @@ void readTXT(char s[]){
 	else std::cout << "Unable to open file";
 
 }
-/*
-//TODO ADD IN HEADER
-struct PlayerState {
-	char name[20];
-	int level;
-	double health;
-	int experience;
-};*/

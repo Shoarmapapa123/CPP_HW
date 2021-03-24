@@ -27,6 +27,12 @@
     <ClCompile Include="HW3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MyClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyStack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HW1.h">
@@ -36,6 +42,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="HW3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyStack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

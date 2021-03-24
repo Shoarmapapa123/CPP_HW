@@ -146,8 +146,12 @@
     <ClCompile Include="HW1.cpp" />
     <ClCompile Include="HW2.cpp" />
     <ClCompile Include="HW3.cpp" />
+    <ClCompile Include="MyClass.cpp" />
+    <ClCompile Include="MyStack.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyStack.h" />
+    <ClInclude Include="MyClass.h" />
     <ClInclude Include="HW3.h" />
     <ClInclude Include="HW1.h" />
     <ClInclude Include="HW2.h" />
