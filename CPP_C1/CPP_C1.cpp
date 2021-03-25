@@ -5,25 +5,16 @@
 #include "HW3.h"
 #include "MyClass.h"
 #include "MyStack.h"
+#include "HW5.h"
+#include "MyBST.h"
 
 //TODO HW2 => struct excercise
 int main()
 {
-	/*int** p = new int*;
-	int n = 5;
-	pascalTriangle(p, n);
-	printPascalTriangle(p, n);
-	deletePascalTriangle(p, n);*/
-	MyStack m;
-	m.print();
-	m.push(101);
-	m.print();
-	m.push(220);
-	m.print();
-	m.push(352);
-	m.print();
-	std::cout << "POPPING: " << m.pop() << std::endl;
-	m.print();
-	std::cout << "SUM: " << m.sum() << std::endl;
+	MyBST tree;
+	for (int i = 0; i < 10; i++) {
+		tree.insert(i);
+	}
+	//tree.traverse();
 }
 

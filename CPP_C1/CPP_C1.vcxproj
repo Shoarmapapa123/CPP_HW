@@ -146,10 +146,14 @@
     <ClCompile Include="HW1.cpp" />
     <ClCompile Include="HW2.cpp" />
     <ClCompile Include="HW3.cpp" />
+    <ClCompile Include="HW5.cpp" />
+    <ClCompile Include="MyBST.cpp" />
     <ClCompile Include="MyClass.cpp" />
     <ClCompile Include="MyStack.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyBST.h" />
+    <ClInclude Include="HW5.h" />
     <ClInclude Include="MyStack.h" />
     <ClInclude Include="MyClass.h" />
     <ClInclude Include="HW3.h" />
