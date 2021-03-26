@@ -43,7 +43,7 @@ void MyBST::insert(int x)
 			}
 		}
 		
-		delete current;
+		current=NULL;
 	}
 }
 
