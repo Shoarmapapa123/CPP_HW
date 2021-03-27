@@ -8,6 +8,7 @@
 #include "HW5.h"
 #include "MyBST.h"
 #include "Fraction.h"
+#include "HW8.h"
 
 //TODO HW2 => struct excercise
 int main()
@@ -25,5 +26,16 @@ int main()
 	tree2.traverse();
 	std::cout << tree.depth();
 	*/
+	unsigned char field = 2;
+	setRoad(field);
+	if (hasRoad(field))
+		std::cout << "HAS ROAD" << std::endl;
+	else
+		std::cout << "HASN'T ROAD" << std::endl;
+	removeTreasure(field);
+	unsigned char player = 128+16;
+	std::cout << getPlayerID(player)<<std::endl;
+	setPlayerID(player, 1);
+	std::cout << getPlayerID(player) << std::endl;
 
 }

@@ -149,9 +149,11 @@
     <ClCompile Include="HW5.cpp" />
     <ClCompile Include="MyClass.cpp" />
     <ClCompile Include="MyStack.cpp" />
+    <ClCompile Include="HW8.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Fraction.h" />
+    <ClInclude Include="HW8.h" />
     <ClInclude Include="MyBST.h" />
     <ClInclude Include="HW5.h" />
     <ClInclude Include="MyStack.h" />
