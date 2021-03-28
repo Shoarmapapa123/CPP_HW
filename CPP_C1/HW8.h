@@ -12,4 +12,6 @@ bool allowsExtraction(const unsigned char field);
 int getPlayerID(const unsigned char player);
 void setPlayerID(unsigned char& player, int i);
 bool hasBit(const unsigned char field, int i);
+char* cipherStory(const char story [1024], const char word [16]);
+char* cipherStory(const char story[1024], const char letter);
 #endif

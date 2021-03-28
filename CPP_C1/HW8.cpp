@@ -1,4 +1,6 @@
 #include "HW8.h"
+#include <string>
+#include <iostream>
 bool hasRoad(const unsigned char field) {
 	return hasBit(field, road_mask);	
 }
@@ -25,8 +27,31 @@ void setPlayerID(unsigned char& player, int i) {
 	unsigned char reset = 15;
 	reset = reset << 4;
 	player = player | reset;
-	player = player ^~id;
+	id += 15;
+	player = player & id;
 }
 bool hasBit(const unsigned char field, int i) {
 	return (field & i) == i;
+}
+
+//XOR cipher
+char* cipherStory(const char story[1024], const char letter) {	
+	char newStory[1024];
+	for (int i = 0; i < 1024; i++) {
+		newStory[i] = story[i];
+	}
+	//strcpy_s(newStory, 1024, story);
+	for (int i = 0; i < 1024; i++) {		
+		newStory[i] = newStory[i] ^ letter;
+		std::cout << newStory[i];
+	}
+	return newStory;
+}
+char* cipherStory(const char story [1024], const char word [16]) {
+	char newStory[1024];
+	strcpy_s(newStory,1024,story);
+	for (int i = 0; i < 16; i++) {
+		strcpy_s(newStory, 1024, cipherStory(newStory, word[i]));		
+	}
+	return newStory;
 }

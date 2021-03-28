@@ -26,16 +26,21 @@ int main()
 	tree2.traverse();
 	std::cout << tree.depth();
 	*/
-	unsigned char field = 2;
-	setRoad(field);
-	if (hasRoad(field))
-		std::cout << "HAS ROAD" << std::endl;
-	else
-		std::cout << "HASN'T ROAD" << std::endl;
-	removeTreasure(field);
-	unsigned char player = 128+16;
-	std::cout << getPlayerID(player)<<std::endl;
-	setPlayerID(player, 1);
-	std::cout << getPlayerID(player) << std::endl;
+
+
+
+	char story[1024] = "Dit is een mooi verhaal";
+	char letter = 'i';
+	char word[16] = "Word";
+	char cipheredStoryLetter[1024];
+	strcpy_s(cipheredStoryLetter,1024,cipherStory(story,letter));
+	char decipheredStoryLetter[1024];
+	//strncpy_s(decipheredStoryLetter, cipherStory(cipheredStoryLetter, letter),_TRUNCATE);
+	//char* cipheredStoryWord = cipherStory(story, word);
+	std::cout << "STORY: " << story<<std::endl;
+	std::cout << "LETTER: " << letter << std::endl;
+	std::cout << "WORD: " << word << std::endl;
+	std::cout << "CIPHERED STORY (LETTER): " <<cipheredStoryLetter <<std::endl;
+	//std::cout << "DECIPHERED STORY (LETTER): " << decipheredStoryLetter << std::endl;
 
 }
