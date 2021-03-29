@@ -58,3 +58,4 @@ void readTXT(char s[]){
 	else std::cout << "Unable to open file";
 
 }
+

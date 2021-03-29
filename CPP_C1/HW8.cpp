@@ -37,16 +37,26 @@ bool hasBit(const unsigned char field, int i) {
 //XOR cipher
 char* cipherStory(const char story[1024], const char letter) {	
 	char newStory[1024];
-	for (int i = 0; i < 1024; i++) {
-		newStory[i] = story[i];
-	}
-	//strcpy_s(newStory, 1024, story);
+	char* buffer = new char[1024];
 	for (int i = 0; i < 1024; i++) {		
-		newStory[i] = newStory[i] ^ letter;
-		std::cout << newStory[i];
+		newStory[i] = story[i] ^ letter;
+		*(buffer + i) = story[i];
 	}
-	return newStory;
+	buffer = newStory;
+	return buffer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 char* cipherStory(const char story [1024], const char word [16]) {
 	char newStory[1024];
 	strcpy_s(newStory,1024,story);
